@@ -12,9 +12,9 @@
            fetch="https://github.com" />
 
   <!-- Specific remotes for third party projects -->
-  <remote  name="cm"
-           fetch="https://github.com/CyanogenMod"
-           review="review.cyanogenmod.org" />
+  <remote  name="lineage"
+           fetch="https://github.com/LineageOS"
+           review="review.lineageos.org" />
   <remote  name="omni"
            fetch="https://github.com/omnirom"
            review="gerrit.omnirom.org" />
@@ -31,7 +31,7 @@
   <remote  name="private"
            fetch="ssh://git@github.com" />
 
-  <default revision="refs/heads/cm-10.2"
+  <default revision="refs/heads/lineage-14.1"
            remote="github"
            sync-c="true"
            sync-f="true"
@@ -43,129 +43,129 @@
            fetch=".." />
 
   <!-- from x86 port repositories -->
-  <project path="build" name="platform/build" groups="pdk" remote="x86" revision="jb-x86" >
+  <project path="build" name="platform/build" groups="pdk" remote="x86" revision="oreo-x86" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="kernel" name="kernel/common" remote="x86" revision="android-3.10" />
-  <project path="bionic" name="platform/bionic" groups="pdk" remote="x86" revision="jb-x86" />
-  <project path="bootable/newinstaller" name="platform/bootable/newinstaller" remote="x86" revision="jb-x86" />
-  <project path="dalvik" name="platform/dalvik" remote="x86" revision="jb-x86" />
-  <project path="device/generic/x86" name="device/generic/x86" groups="pdk" remote="x86" revision="jb-x86" />
-  <project path="external/alsa-lib" name="platform/external/alsa-lib" remote="x86" revision="jb-x86" />
-  <project path="external/alsa-utils" name="platform/external/alsa-utils" remote="x86" revision="jb-x86" />
-  <project path="external/bluetooth/bluedroid" name="platform/external/bluetooth/bluedroid" groups="pdk" remote="x86" revision="jb-x86" />
-  <project path="external/busybox" name="platform/external/busybox" remote="x86" revision="jb-x86" />
-  <project path="external/drm" name="platform/external/drm" remote="x86" revision="jb-x86" />
-  <project path="external/eject" name="platform/external/eject" remote="x86" revision="jb-x86" />
-  <project path="external/ffmpeg" name="platform/external/ffmpeg" remote="x86" revision="jb-x86" />
-  <project path="external/koush/Superuser" name="platform/external/koush/Superuser" remote="x86" revision="jb-x86" />
-  <project path="external/koush/Widgets" name="platform/external/koush/Widgets" remote="x86" revision="jb-x86" />
-  <project path="external/mesa" name="platform/external/mesa" remote="x86" revision="jb-x86" />
-  <project path="external/mksh" name="platform/external/mksh" groups="pdk" remote="x86" revision="jb-x86" />
-  <project path="external/ppp" name="platform/external/ppp" remote="x86" revision="jb-x86" />
-  <project path="external/stagefright-plugins" name="platform/external/stagefright-plugins" remote="x86" revision="jb-x86"/>
-  <project path="external/tslib" name="platform/external/tslib" remote="x86" revision="jb-x86" />
-  <project path="external/v86d" name="platform/external/v86d" remote="x86" revision="jb-x86" />
-  <project path="external/wpa_supplicant_8" name="platform/external/wpa_supplicant_8" groups="pdk" remote="x86" revision="jb-x86" />
-  <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" remote="x86" revision="jb-x86" />
-  <project path="hardware/broadcom/libbt" name="platform/hardware/broadcom/libbt" groups="pdk" remote="x86" revision="jb-x86" />
-  <project path="hardware/drm_gralloc" name="platform/hardware/drm_gralloc" remote="x86" revision="jb-x86" />
-  <project path="hardware/gps" name="platform/hardware/gps" remote="x86" revision="jb-x86" />
-  <project path="hardware/intel/hwcomposer" name="platform/hardware/intel/hwcomposer" remote="x86" revision="jb-x86" />
-  <project path="hardware/libaudio" name="platform/hardware/libaudio" remote="x86" revision="jb-x86" />
-  <project path="hardware/libcamera" name="platform/hardware/libcamera" remote="x86" revision="jb-x86" />
-  <project path="hardware/libhardware" name="platform/hardware/libhardware" groups="pdk" remote="x86" revision="jb-x86" />
-  <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="pdk" remote="x86" revision="jb-x86" />
-  <project path="hardware/liblights" name="platform/hardware/liblights" remote="x86" revision="jb-x86" />
-  <project path="hardware/libsensors" name="platform/hardware/libsensors" remote="x86" revision="jb-x86" />
-  <project path="hardware/ril" name="platform/hardware/ril" groups="pdk" remote="x86" revision="jb-x86" />
-  <project path="system/extras" name="platform/system/extras" groups="pdk" remote="x86" revision="jb-x86" />
-  <project path="system/vold" name="platform/system/vold" groups="pdk" remote="x86" revision="jb-x86" />
-  <project path="vendor/intel" name="platform/vendor/intel" remote="x86" revision="jb-x86" />
+  <project path="bionic" name="platform/bionic" groups="pdk" remote="x86" revision="oreo-x86" />
+  <project path="bootable/newinstaller" name="platform/bootable/newinstaller" remote="x86" revision="oreo-x86" />
+  <project path="dalvik" name="platform/dalvik" remote="x86" revision="oreo-x86" />
+  <project path="device/generic/x86" name="device/generic/x86" groups="pdk" remote="x86" revision="oreo-x86" />
+  <project path="external/alsa-lib" name="platform/external/alsa-lib" remote="x86" revision="oreo-x86" />
+  <project path="external/alsa-utils" name="platform/external/alsa-utils" remote="x86" revision="oreo-x86" />
+  <project path="external/bluetooth/bluedroid" name="platform/external/bluetooth/bluedroid" groups="pdk" remote="x86" revision="oreo-x86" />
+  <project path="external/busybox" name="platform/external/busybox" remote="x86" revision="oreo-x86" />
+  <project path="external/drm" name="platform/external/drm" remote="x86" revision="oreo-x86" />
+  <project path="external/eject" name="platform/external/eject" remote="x86" revision="oreo-x86" />
+  <project path="external/ffmpeg" name="platform/external/ffmpeg" remote="x86" revision="oreo-x86" />
+  <project path="external/koush/Superuser" name="platform/external/koush/Superuser" remote="x86" revision="oreo-x86" />
+  <project path="external/koush/Widgets" name="platform/external/koush/Widgets" remote="x86" revision="oreo-x86" />
+  <project path="external/mesa" name="platform/external/mesa" remote="x86" revision="oreo-x86" />
+  <project path="external/mksh" name="platform/external/mksh" groups="pdk" remote="x86" revision="oreo-x86" />
+  <project path="external/ppp" name="platform/external/ppp" remote="x86" revision="oreo-x86" />
+  <project path="external/stagefright-plugins" name="platform/external/stagefright-plugins" remote="x86" revision="oreo-x86"/>
+  <project path="external/tslib" name="platform/external/tslib" remote="x86" revision="oreo-x86" />
+  <project path="external/v86d" name="platform/external/v86d" remote="x86" revision="oreo-x86" />
+  <project path="external/wpa_supplicant_8" name="platform/external/wpa_supplicant_8" groups="pdk" remote="x86" revision="oreo-x86" />
+  <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" remote="x86" revision="oreo-x86" />
+  <project path="hardware/broadcom/libbt" name="platform/hardware/broadcom/libbt" groups="pdk" remote="x86" revision="oreo-x86" />
+  <project path="hardware/drm_gralloc" name="platform/hardware/drm_gralloc" remote="x86" revision="oreo-x86" />
+  <project path="hardware/gps" name="platform/hardware/gps" remote="x86" revision="oreo-x86" />
+  <project path="hardware/intel/hwcomposer" name="platform/hardware/intel/hwcomposer" remote="x86" revision="oreo-x86" />
+  <project path="hardware/libaudio" name="platform/hardware/libaudio" remote="x86" revision="oreo-x86" />
+  <project path="hardware/libcamera" name="platform/hardware/libcamera" remote="x86" revision="oreo-x86" />
+  <project path="hardware/libhardware" name="platform/hardware/libhardware" groups="pdk" remote="x86" revision="oreo-x86" />
+  <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="pdk" remote="x86" revision="oreo-x86" />
+  <project path="hardware/liblights" name="platform/hardware/liblights" remote="x86" revision="oreo-x86" />
+  <project path="hardware/libsensors" name="platform/hardware/libsensors" remote="x86" revision="oreo-x86" />
+  <project path="hardware/ril" name="platform/hardware/ril" groups="pdk" remote="x86" revision="oreo-x86" />
+  <project path="system/extras" name="platform/system/extras" groups="pdk" remote="x86" revision="oreo-x86" />
+  <project path="system/vold" name="platform/system/vold" groups="pdk" remote="x86" revision="oreo-x86" />
+  <project path="vendor/intel" name="platform/vendor/intel" remote="x86" revision="oreo-x86" />
 
- <!-- CM -->
-  <project path="abi/cpp" name="android_abi_cpp" remote="cm" groups="pdk" />
-  <project path="bootable/diskinstaller" name="android_bootable_diskinstaller" remote="cm" />
-  <project path="bootable/recovery" name="android_bootable_recovery" remote="cm" />
-  <project path="developers/build" name="platform/developers/build" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
-  <project path="developers/demos" name="platform/developers/demos" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
-  <project path="developers/docs" name="platform/developers/docs" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
-  <project path="developers/samples/android" name="platform/developers/samples/android" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
-  <project path="development" name="android_development" remote="cm" />
-  <project path="device/common" name="android_device_common" remote="cm" />
-  <project path="device/generic/armv7-a-neon" name="android_device_generic_armv7-a-neon" remote="cm" groups="pdk" />
-  <project path="device/generic/common" name="android_device_generic_common" remote="cm" groups="pdk" />
-  <project path="device/generic/goldfish" name="android_device_generic_goldfish" remote="cm" groups="pdk" />
-  <project path="device/generic/mips" name="android_device_generic_mips" remote="cm" groups="pdk" />
-  <project path="device/generic/x86" name="android_device_generic_x86" remote="cm" groups="pdk" />
-  <project path="device/generic/mini-emulator-armv7-a-neon" name="device/generic/mini-emulator-armv7-a-neon" groups="pdk" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
-  <project path="device/generic/mini-emulator-mips" name="device/generic/mini-emulator-mips" groups="pdk" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
-  <project path="device/generic/mini-emulator-x86" name="device/generic/mini-emulator-x86" groups="pdk" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
+ <!-- Lineage -->
+  <project path="abi/cpp" name="android_abi_cpp" remote="lineage" groups="pdk" />
+  <project path="bootable/diskinstaller" name="android_bootable_diskinstaller" remote="lineage" />
+  <project path="bootable/recovery" name="android_bootable_recovery" remote="lineage" />
+  <project path="developers/build" name="platform/developers/build" remote="aosp" revision="refs/tags/android-8.0.1_r1" />
+  <project path="developers/demos" name="platform/developers/demos" remote="aosp" revision="refs/tags/android-8.0.1_r1" />
+  <project path="developers/docs" name="platform/developers/docs" remote="aosp" revision="refs/tags/android-8.0.1_r1" />
+  <project path="developers/samples/android" name="platform/developers/samples/android" remote="aosp" revision="refs/tags/android-8.0.1_r1" />
+  <project path="development" name="android_development" remote="lineage" />
+  <project path="device/common" name="android_device_common" remote="lineage" />
+  <project path="device/generic/armv7-a-neon" name="android_device_generic_armv7-a-neon" remote="lineage" groups="pdk" />
+  <project path="device/generic/common" name="android_device_generic_common" remote="lineage" groups="pdk" />
+  <project path="device/generic/goldfish" name="android_device_generic_goldfish" remote="lineage" groups="pdk" />
+  <project path="device/generic/mips" name="android_device_generic_mips" remote="lineage" groups="pdk" />
+  <project path="device/generic/x86" name="android_device_generic_x86" remote="lineage" groups="pdk" />
+  <project path="device/generic/mini-emulator-armv7-a-neon" name="device/generic/mini-emulator-armv7-a-neon" groups="pdk" remote="aosp" revision="refs/tags/android-8.0.1_r1" />
+  <project path="device/generic/mini-emulator-mips" name="device/generic/mini-emulator-mips" groups="pdk" remote="aosp" revision="refs/tags/android-8.0.1_r1" />
+  <project path="device/generic/mini-emulator-x86" name="device/generic/mini-emulator-x86" groups="pdk" remote="aosp" revision="refs/tags/android-8.0.1_r1" />
   <project path="device/google/accessory/arduino" name="android_device_google_accessory_arduino" remote="cm" groups="device" />
   <project path="device/google/accessory/demokit" name="android_device_google_accessory_demokit" remote="cm" groups="device" />
-  <project path="device/sample" name="android_device_sample" remote="cm" groups="device" />
-  <project path="external/aac" name="android_external_aac" remote="cm" groups="pdk" />
-  <project path="external/android-clat" name="android_external_android-clat" remote="cm" />
-  <project path="external/android-mock" name="android_external_android-mock" remote="cm" />
-  <project path="external/ant-glob" name="android_external_ant-glob" remote="cm" />
-  <project path="external/antlr" name="android_external_antlr" remote="cm" />
-  <project path="external/apache-harmony" name="android_external_apache-harmony" remote="cm" />
-  <project path="external/apache-http" name="android_external_apache-http" remote="cm" />
-  <project path="external/apache-qp" name="android_external_apache-qp" remote="cm" />
-  <project path="external/apache-xml" name="android_external_apache-xml" remote="cm" />
-  <project path="external/arduino" name="android_external_arduino" remote="cm" />
-  <project path="external/bash" name="android_external_bash" remote="cm" />
-  <project path="external/bison" name="android_external_bison" remote="cm" groups="pdk" />
-  <project path="external/blktrace" name="android_external_blktrace" remote="cm" />
-  <project path="external/bouncycastle" name="android_external_bouncycastle" remote="cm" />
-  <project path="external/bsdiff" name="android_external_bsdiff" remote="cm" groups="pdk" />
-  <project path="external/bzip2" name="android_external_bzip2" remote="cm" groups="pdk" />
-  <project path="external/ceres-solver" name="platform/external/ceres-solver" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
-  <project path="external/checkpolicy" name="android_external_checkpolicy" remote="cm" groups="pdk" />
-  <project path="external/chromium" name="android_external_chromium" remote="cm" />
-  <project path="external/chromium-trace" name="android_external_chromium-trace" remote="cm" groups="pdk" />
-  <project path="external/clang" name="android_external_clang" remote="cm" groups="pdk" />
-  <project path="external/compiler-rt" name="android_external_compiler-rt" remote="cm" groups="pdk" />
-  <project path="external/crda" name="android_external_crda" remote="cm" />
-  <project path="external/dexmaker" name="android_external_dexmaker" remote="cm" />
-  <project path="external/dhcpcd" name="android_external_dhcpcd" remote="cm" />
-  <project path="external/dnsmasq" name="android_external_dnsmasq" remote="cm" groups="pdk" />
-  <project path="external/dropbear" name="android_external_dropbear" remote="cm" />
-  <project path="external/e2fsprogs" name="android_external_e2fsprogs" remote="cm" groups="pdk" />
-  <project path="external/easymock" name="android_external_easymock" remote="cm" />
-  <project path="external/eclipse-basebuilder" name="android_external_eclipse-basebuilder" remote="cm" />
-  <project path="external/eclipse-windowbuilder" name="android_external_eclipse-windowbuilder" remote="cm" />
-  <project path="external/elfutils" name="android_external_elfutils" remote="cm" />
-  <project path="external/embunit" name="android_external_embunit" remote="cm" />
-  <project path="external/emma" name="android_external_emma" remote="cm" />
-  <project path="external/esd" name="android_external_esd" remote="cm" />
-  <project path="external/exfat" name="android_external_exfat" remote="cm" />
-  <project path="external/expat" name="android_external_expat" remote="cm" groups="pdk" />
-  <project path="external/eyes-free" name="android_external_eyes-free" remote="cm" />
-  <project path="external/fdlibm" name="android_external_fdlibm" remote="cm" />
-  <project path="external/flac" name="android_external_flac" remote="cm" groups="pdk" />
+  <project path="device/sample" name="android_device_sample" remote="lineage" groups="device" />
+  <project path="external/aac" name="android_external_aac" remote="lineage" groups="pdk" />
+  <project path="external/android-clat" name="android_external_android-clat" remote="lineage" />
+  <project path="external/android-mock" name="android_external_android-mock" remote="lineage" />
+  <project path="external/ant-glob" name="android_external_ant-glob" remote="lineage" />
+  <project path="external/antlr" name="android_external_antlr" remote="lineage" />
+  <project path="external/apache-harmony" name="android_external_apache-harmony" remote="lineage" />
+  <project path="external/apache-http" name="android_external_apache-http" remote="lineage" />
+  <project path="external/apache-qp" name="android_external_apache-qp" remote="lineage" />
+  <project path="external/apache-xml" name="android_external_apache-xml" remote="lineage" />
+  <project path="external/arduino" name="android_external_arduino" remote="lineage" />
+  <project path="external/bash" name="android_external_bash" remote="lineage" />
+  <project path="external/bison" name="android_external_bison" remote="lineage" groups="pdk" />
+  <project path="external/blktrace" name="android_external_blktrace" remote="lineage" />
+  <project path="external/bouncycastle" name="android_external_bouncycastle" remote="lineage" />
+  <project path="external/bsdiff" name="android_external_bsdiff" remote="lineage" groups="pdk" />
+  <project path="external/bzip2" name="android_external_bzip2" remote="lineage" groups="pdk" />
+  <project path="external/ceres-solver" name="platform/external/ceres-solver" remote="aosp" revision="refs/tags/android-8.0.1_r1" />
+  <project path="external/checkpolicy" name="android_external_checkpolicy" remote="lineage" groups="pdk" />
+  <project path="external/chromium" name="android_external_chromium" remote="lineage" />
+  <project path="external/chromium-trace" name="android_external_chromium-trace" remote="lineage" groups="pdk" />
+  <project path="external/clang" name="android_external_clang" remote="lineage" groups="pdk" />
+  <project path="external/compiler-rt" name="android_external_compiler-rt" remote="lineage" groups="pdk" />
+  <project path="external/crda" name="android_external_crda" remote="lineage" />
+  <project path="external/dexmaker" name="android_external_dexmaker" remote="lineage" />
+  <project path="external/dhcpcd" name="android_external_dhcpcd" remote="lineage" />
+  <project path="external/dnsmasq" name="android_external_dnsmasq" remote="lineage" groups="pdk" />
+  <project path="external/dropbear" name="android_external_dropbear" remote="lineage" />
+  <project path="external/e2fsprogs" name="android_external_e2fsprogs" remote="lineage" groups="pdk" />
+  <project path="external/easymock" name="android_external_easymock" remote="lineage" />
+  <project path="external/eclipse-basebuilder" name="android_external_eclipse-basebuilder" remote="lineage" />
+  <project path="external/eclipse-windowbuilder" name="android_external_eclipse-windowbuilder" remote="lineage" />
+  <project path="external/elfutils" name="android_external_elfutils" remote="lineage" />
+  <project path="external/embunit" name="android_external_embunit" remote="lineage" />
+  <project path="external/emma" name="android_external_emma" remote="lineage" />
+  <project path="external/esd" name="android_external_esd" remote="lineage" />
+  <project path="external/exfat" name="android_external_exfat" remote="lineage" />
+  <project path="external/expat" name="android_external_expat" remote="lineage" groups="pdk" />
+  <project path="external/eyes-free" name="android_external_eyes-free" remote="lineage" />
+  <project path="external/fdlibm" name="android_external_fdlibm" remote="lineage" />
+  <project path="external/flac" name="android_external_flac" remote="lineage" groups="pdk" />
   <project path="external/Focal" name="xplodwild/android_external_Focal" remote="github" />
-  <project path="external/freetype" name="android_external_freetype" remote="cm" groups="pdk" />
-  <project path="external/fuse" name="android_external_fuse" remote="cm" />
-  <project path="external/fsck_msdos" name="android_external_fsck_msdos" remote="cm" />
-  <project path="external/ganymed-ssh2" name="android_external_ganymed-ssh2" remote="cm" />
-  <project path="external/gcc-demangle" name="android_external_gcc-demangle" remote="cm" groups="pdk" />
-  <project path="external/genext2fs" name="android_external_genext2fs" remote="cm" />
-  <project path="external/giflib" name="android_external_giflib" remote="cm" />
-  <project path="external/google" name="android_external_google" remote="cm" />
-  <project path="external/google-diff-match-patch" name="android_external_google-diff-match-patch" remote="cm" />
-  <project path="external/grub" name="android_external_grub" remote="cm" />
-  <project path="external/gson" name="android_external_gson" remote="cm" />
-  <project path="external/gtest" name="android_external_gtest" remote="cm" groups="pdk" />
-  <project path="external/guava" name="android_external_guava" remote="cm" />
-  <project path="external/hamcrest" name="android_external_hamcrest" remote="cm" />
-  <project path="external/harfbuzz" name="android_external_harfbuzz" remote="cm" />
-  <project path="external/harfbuzz_ng" name="platform/external/harfbuzz_ng" remote="aosp" revision="refs/tags/android-4.3.1_r1" />
-  <project path="external/htop" name="android_external_htop" remote="cm" />
-  <project path="external/hyphenation" name="android_external_hyphenation" remote="cm" />
-  <project path="external/icu4c" name="android_external_icu4c" remote="cm" groups="pdk" />
-  <project path="external/iproute2" name="android_external_iproute2" remote="cm" groups="pdk" />
-  <project path="external/ipsec-tools" name="android_external_ipsec-tools" remote="cm" />
+  <project path="external/freetype" name="android_external_freetype" remote="lineage" groups="pdk" />
+  <project path="external/fuse" name="android_external_fuse" remote="lineage" />
+  <project path="external/fsck_msdos" name="android_external_fsck_msdos" remote="lineage" />
+  <project path="external/ganymed-ssh2" name="android_external_ganymed-ssh2" remote="lineage" />
+  <project path="external/gcc-demangle" name="android_external_gcc-demangle" remote="lineage" groups="pdk" />
+  <project path="external/genext2fs" name="android_external_genext2fs" remote="lineage" />
+  <project path="external/giflib" name="android_external_giflib" remote="lineage" />
+  <project path="external/google" name="android_external_google" remote="lineage" />
+  <project path="external/google-diff-match-patch" name="android_external_google-diff-match-patch" remote="lineage" />
+  <project path="external/grub" name="android_external_grub" remote="lineage" />
+  <project path="external/gson" name="android_external_gson" remote="lineage" />
+  <project path="external/gtest" name="android_external_gtest" remote="lineage" groups="pdk" />
+  <project path="external/guava" name="android_external_guava" remote="lineage" />
+  <project path="external/hamcrest" name="android_external_hamcrest" remote="lineage" />
+  <project path="external/harfbuzz" name="android_external_harfbuzz" remote="lineage" />
+  <project path="external/harfbuzz_ng" name="platform/external/harfbuzz_ng" remote="aosp" revision="refs/tags/android-8.0.1_r1" />
+  <project path="external/htop" name="android_external_htop" remote="lineage" />
+  <project path="external/hyphenation" name="android_external_hyphenation" remote="lineage" />
+  <project path="external/icu4c" name="android_external_icu4c" remote="lineage" groups="pdk" />
+  <project path="external/iproute2" name="android_external_iproute2" remote="lineage" groups="pdk" />
+  <project path="external/ipsec-tools" name="android_external_ipsec-tools" remote="lineage" />
   <project path="external/iptables" name="android_external_iptables" remote="cm" />
   <project path="external/jack" name="android_external_jack" remote="cm" />
   <project path="external/javasqlite" name="android_external_javasqlite" remote="cm" />
